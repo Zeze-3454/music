@@ -39,7 +39,7 @@ async def start(_, message: Message):
 
 @Client.on_callback_query(filters.regex("herkes"))
 async def herkes(_, query: CallbackQuery)
-    await query.edit_message_text(f"""<b>🇹🇷 Tüm Komutlar : \n\n» /vbul => Video indir . \n» /bul => Müzik indir . \n» /oynat => Müzik oynat . \n» /durdur => Müziği durdur . \n» /devam => Müziği sürdür . \n» /atla =>  Müziği atla . \n» /son => Müziği sonlandır . \n» /katil => Asistanı gruba davet etme . \n» /reload => ᴀᴅᴍɪɴ ʟɪsᴛᴇsɪɴɪ ɢᴜɴᴄᴇʟʟᴇʀ . \n\n» /auth => ᴋᴜʟʟᴀɴɪᴄɪɴɪɴ ʏᴏɴᴇᴛɪᴄɪ ᴏʟᴍᴀᴅɪɢɪ ʜᴀʟᴅᴇ ᴋᴏᴍᴜᴛʟᴀʀɪ ᴋᴜʟʟᴀɴᴍᴀsɪɴᴀ ɪᴢɪɴ ᴠᴇʀɪʀ .  \n\n» /unauth => ᴋᴜʟʟᴀɴɪᴄɪɴɪɴ ʏᴏɴᴇᴛɪᴄɪ ᴏʟᴍᴀᴅɪɢɪ ʜᴀʟᴅᴇ ᴋᴏᴍᴜᴛʟᴀʀɪ ᴋᴜʟʟᴀɴᴍᴀsɪɴɪ ᴇɴɢᴇʟʟᴇʀ . </b>""",
+    await query.edit_message_text(f"""<b>🇹🇷 Tüm Komutlar : \n\n» /vbul => Video indir . \n» /bul => Müzik indir . \n» /oynat => Müzik oynat . \n» /durdur => Müziği durdur . \n» /devam => Müziği sürdür . \n» /atla =>  Müziği atla . \n» /son => Müziği sonlandır . \n» /katil => Asistanı gruba davet etme . \n» /reload => Admin listesini güncelle . \n\n» /auth => Kullanıcının yönetici olmadığı halde komutları kullanmasına izin verir .  \n\n» /unauth => Kullanıcının yönetici olmadığı halde komutları kullanmasını engeller . </b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
@@ -62,7 +62,7 @@ async def herkes(_, query: CallbackQuery)
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""● **𝖬𝖾𝗋𝗁𝖺𝖻𝖺** {query.from_user.mention} \n\n● **𝖡𝖾𝗇** {bot} !\n\n● **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗅𝖾𝗋𝖽𝖾 müzik 𝖢𝖺𝗅𝖺𝖻𝗂𝗅𝖾𝗇 𝖡𝗈𝗍𝗎𝗆 . . !** \n\n● **𝖡𝖺𝗇 𝖸𝖾𝗍𝗄𝗂𝗌𝗂𝗓, 𝖲𝖾𝗌 𝖸𝗈𝗇𝖾𝗍𝗂𝗆 𝖸𝖾𝗍𝗄𝗂𝗌𝗂 𝗏𝖾𝗋𝗂𝗉 𝖠𝗌𝗂𝗌𝗍𝖺𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾𝗒𝗂𝗇 . . !**""",
+    await query.edit_message_text(f"""● **Merhaba** {message.from_user.mention} \n\n● **Ben** {bot} !\n\n● **Sesli sohbetlerde müzik çalabilen botum . . !** \n\n● **Ban yetkisiz, Ses yönetim yetkisi verip Asistanı gruba ekleyin . . !**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
