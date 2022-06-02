@@ -38,7 +38,7 @@ async def start(_, message: Message):
 
 
 @Client.on_callback_query(filters.regex("herkes"))
-async def herkes(_, query: CallbackQuery)
+async def herkes(_, query: CallbackQuery):
     await query.edit_message_text(f"""<b>🇹🇷 Tüm Komutlar : \n\n» /vbul => Video indir . \n» /bul => Müzik indir . \n» /oynat => Müzik oynat . \n» /durdur => Müziği durdur . \n» /devam => Müziği sürdür . \n» /atla =>  Müziği atla . \n» /son => Müziği sonlandır . \n» /katil => Asistanı gruba davet etme . \n» /reload => Admin listesini güncelle . \n\n» /auth => Kullanıcının yönetici olmadığı halde komutları kullanmasına izin verir .  \n\n» /unauth => Kullanıcının yönetici olmadığı halde komutları kullanmasını engeller . </b>""",
     reply_markup=InlineKeyboardMarkup(
              [
